@@ -8,11 +8,12 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 public class Program {
+	public static List<Aplicant>
 
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = ReaderElevi.readPupil("elevi.txt");
+			listaAplicanti = ReaderAngajati.readAngajati("angajati.txt");
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
