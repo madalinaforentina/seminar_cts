@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class Elev extends Aplicant{
 	private int clasa;
 	private String tutore;
+	public static int sumaFinantata=30;
 	
 	public int getClasa() {
 		return clasa;
@@ -41,6 +42,11 @@ public class Elev extends Aplicant{
 		int s=30;
 		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
 		return s;
+	}
+	@Override
+	public void afisareSumaFinantata() {
+		System.out.println(super.compunereStringPtSumaFinanta(this.sumaFinantata, "Elevul"));
+		
 	}
 	
 }

@@ -62,5 +62,19 @@ public abstract class Aplicant{
 	public void setNr_proiecte(int nr_proiecte) {
 		this.nr_proiecte = nr_proiecte;
 	}
+	
+	public abstract  void afisareSumaFinantata();
+	
+	public String compunereStringPtSumaFinanta(int suma, String tipAplicant) {
+		StringBuilder stringBuilder=new StringBuilder();
+		stringBuilder.append("Tip aplicant ");
+		stringBuilder.append(getNume());
+		stringBuilder.append(" ");
+		stringBuilder.append(getPrenume());
+		stringBuilder.append(" primeste");
+		stringBuilder.append(suma);
+		stringBuilder.append(" Euro/zi in proiect.");
+		return stringBuilder.toString();
+	}
 
 }
