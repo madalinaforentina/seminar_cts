@@ -38,11 +38,19 @@ public abstract class Aplicant{
 	}
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
+		
 	}
 	
 	
 
 	
+	public String[] getDenumireProiect() {
+		return denumireProiect;
+	}
+	public void setDenumireProiect(String[] denumireProiect,int nr_proiecte) {
+		this.denumireProiect = denumireProiect;
+		this.nr_proiecte = nr_proiecte;
+	}
 	public Aplicant() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -55,12 +63,6 @@ public abstract class Aplicant{
 		this.punctaj = punctaj;
 		this.nr_proiecte = nr_proiecte;
 		this.denumireProiect = denumireProiect;
-	}
-	public int getNr_proiecte() {
-		return nr_proiecte;
-	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
 	}
 	
 	public abstract  void afisareSumaFinantata();
