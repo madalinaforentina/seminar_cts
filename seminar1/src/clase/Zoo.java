@@ -23,9 +23,10 @@ public class Zoo {
 		
 	}
 	
-	public void feedAnimal() {
-		for(Animal a:animale) {
-			Zookeeper.
+	
+	public void hranireToateAnimalele() {
+		for(Animal a: animale) {
+			this.z.feed(a);
 		}
 	}
 	

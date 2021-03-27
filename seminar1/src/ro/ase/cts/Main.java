@@ -12,7 +12,7 @@ public class Main {
 		Animal z1=new Zebra("Monica");
 		Animal z2=new Zebra("Gigel");
 		Animal g1=new Girafa("Moni");
-		Animal g2=new Girafa("Gig");
+		Animal g2=new Girafa("Gig",500);
 		
 		
 		zoo.adaugareAnimal(z1);
