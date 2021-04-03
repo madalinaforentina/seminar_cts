@@ -31,38 +31,44 @@ public class RezervareBuilderV2 implements RezervareBuilderAbstract {
 
 
 
-	public void setCodRezervare(int codRezervare) {
+	public  RezervareBuilderV2 setCodRezervare(int codRezervare) {
 		this.codRezervare = codRezervare;
+		return this;
 	}
 
 
 
-	public void setAreMancareInclusa(boolean areMancareInclusa) {
+	public RezervareBuilderV2 setAreMancareInclusa(boolean areMancareInclusa) {
 		this.areMancareInclusa = areMancareInclusa;
+		return this;
 	}
 
 
 
-	public void setAreBauturaInclusa(boolean areBauturaInclusa) {
+	public RezervareBuilderV2 setAreBauturaInclusa(boolean areBauturaInclusa) {
 		this.areBauturaInclusa = areBauturaInclusa;
+		return this;
 	}
 
 
 
-	public void setAreScaunErgonomic(boolean areScaunErgonomic) {
+	public RezervareBuilderV2 setAreScaunErgonomic(boolean areScaunErgonomic) {
 		this.areScaunErgonomic = areScaunErgonomic;
+		return this;
 	}
 
 
 
-	public void setAreMuzicaAmbientala(boolean areMuzicaAmbientala) {
+	public RezervareBuilderV2 setAreMuzicaAmbientala(boolean areMuzicaAmbientala) {
 		this.areMuzicaAmbientala = areMuzicaAmbientala;
+		return this;
 	}
 
 
 
-	public void setGenMuzica(String genMuzica) {
+	public RezervareBuilderV2 setGenMuzica(String genMuzica) {
 		this.genMuzica = genMuzica;
+		return this;
 	}
 	
 	
