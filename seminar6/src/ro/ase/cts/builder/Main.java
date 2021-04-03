@@ -14,6 +14,16 @@ public class Main {
 		Rezervare r5= br.setCodRezervare(213).setAreBauturaInclusa(true).build();
 		System.out.println(r4);
 		System.out.println(r5);
+		
+		RezervareBuilderV2 RB2=new RezervareBuilderV2();
+		
+		RB2.setAreBauturaInclusa(true).setAreMancareInclusa(true).setAreScaunErgonomic(true);
+		
+		Rezervare rezervare6=RezervareBuilderV2.setCodRezervare(4).build();
+		Rezervare rezervare7=RezervareBuilderV2.setCodRezervare(10).build();
+		System.out.println(rezervare6.toString());
+		System.out.println(rezervare7.toString());
+
 	}
 	
 
