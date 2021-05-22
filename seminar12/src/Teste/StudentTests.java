@@ -54,7 +54,7 @@ public class StudentTests {
 		Student student=new Student();
 		student.adaugaNota(4);
 		student.adaugaNota(10);
-		assertTrue(student.areRestante());
+		assertFalse(student.areRestante());
 		
 	}
 	
@@ -63,7 +63,7 @@ public class StudentTests {
 		Student student=new Student();
 		student.adaugaNota(4);
 		student.adaugaNota(10);
-		assertTrue(student.areRestante());
+		assertFalse(student.areRestante());
 		
 	}
 		
